@@ -1,0 +1,128 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset="utf-8")
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    title Резюме
+    link(rel='stylesheet' href='styles/normalize.css')
+    link(rel='stylesheet' href='styles/style.css')
+    link(rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap')
+
+  body
+    header.info
+      h1.visually-hidden Резюме Владислава Гордеева
+      img.info__image(src='img/photo.jpg' width='280' height='245' alt='Моя фотография')
+      div.info__general-wrapper
+        p.info__general.text <strong>Владислав Гордеев</strong>
+        p.info__general.text <em>Junior Frontend Developer</em>
+        p.info__general.text 24 года, Санкт-Петербург
+        ul
+          li.text
+            | Телефон: 
+            a.link(href="tel:+79516765761") 8-951-676-57-61
+          li.text
+            | Email: 
+            a.link(href="mailto:gordeevladislav@gmail.com") gordeevladislav@gmail.com
+          li.text
+            | Telegram: 
+            a.link(href="t.me/panicswtch") t.me/panicswtch
+          li.text
+            | Github: 
+            a.link(href="https://github.com/panicswtch") github.com/panicswtch
+    main.main
+      section.section
+        h2.title Что умею
+        ul
+          li.text Адаптивно и кроссбраузерно как на «чистом» <strong>HTML5</strong> и <strong>CSS</strong>, 
+            | так и с использованием библиотек (<strong>Bootstrap</strong>, <strong>Vuetify</strong>)
+          li.text Оптимизировать изображения
+          li.text Использовать препроцессоры и шаблонизаторы: <strong>Less, Sass, Pug</strong>
+          li.text Разбивать код по БЭМ
+          li.text Разрабатывать логику на <strong>JavaScript</strong> (ES5, ES6+)
+          li.text Создавать SPA на <strong>React</strong> и <strong>Redux</strong>, <strong>Vue</strong> и <strong>Vuex</strong>
+          li.text Автоматизировать сборку с помощью <strong>Gulp</strong>
+          li.text Работать с <strong>Git</strong> через консоль
+
+      section.section
+        h2.title Примеры проектов
+        ul
+          li.project
+            h3.project__title Punk Beer
+            ul.project__links-list
+              li.project__link-item.project__link-item--deploy
+                a.project__link.link(href='https://punk-beer-d3ab6.web.app/') проект
+              li.project__link-item.project__link-item--github
+                a.project__link.link(href='https://github.com/panicswtch/punk-beer') код
+            p.text.project__description SPA на основе открытого API. Данные сохраняются на бэкенде.
+            ul.text.projects__stack-list.stack
+              li.stack__item React
+              li.stack__item Redux
+              li.stack__item Adaptive CSS
+              li.stack__item Firebase
+          li.project
+            h3.project__title Кексобукинг
+            ul.project__links-list
+              li.project__link-item.project__link-item--deploy
+                a.project__link.link(href='https://panicswtch.github.io/keksobooking/') проект
+              li.project__link-item.project__link-item--github
+                a.project__link.link(href='https://github.com/panicswtch/keksobooking') код
+            p.text.project__description
+              | Сервис просмотра и размещения объявлений о сдаче в аренду недвижимости.
+              | Финальный проект интенсива по разработке на JavaScript HTML Academy.
+            ul.text.projects__stack-list.stack
+              li.stack__item JavaScript (ES5)
+          li.project
+            h3.project__title To do list
+            ul.project__links-list
+              li.project__link-item.project__link-item--deploy
+                a.project__link.link(href='https://panicswtch.github.io/simple-to-do/') проект
+              li.project__link-item.project__link-item--github
+                a.project__link.link(href='https://github.com/panicswtch/simple-to-do') код
+            p.text.project__description Простое to-do приложение на JavaScript. Данные сохраняются в браузере.
+            ul.text.projects__stack-list.stack
+              li.stack__item JavaScript
+              li.stack__item Sass
+              li.stack__item Pug
+          li.project
+            h3.project__title Кэт энерджи
+            ul.project__links-list
+              li.project__link-item.project__link-item--deploy
+                a.project__link.link(href='https://panicswtch.github.io/cat-energy/') проект
+              li.project__link-item.project__link-item--github
+                a.project__link.link(href='https://github.com/panicswtch/cat-energy') код
+            p.text.project__description Сайт интернет-магазина для котов. Финальный проект второго уровня верстки HTML Academy.
+            ul.text.projects__stack-list.stack
+              li.stack__item HTML
+              li.stack__item Adaptive CSS
+              li.stack__item Less
+              li.stack__item Mobile first
+          li.project
+            h3.project__title Техномарт
+            ul.project__links-list
+              li.project__link-item.project__link-item--deploy
+                a.project__link.link(href='https://panicswtch.github.io/technomart/index.html') проект
+              li.project__link-item.project__link-item--github
+                a.project__link.link(href='https://github.com/panicswtch/technomart') код
+            p.text.project__description Сайт интернет-магазина инструментов. Финальный проект первого уровня верстки HTML Academy.
+            ul.text.projects__stack-list.stack
+              li.stack__item HTML
+              li.stack__item CSS
+
+      section.section
+        h2.title Где учился
+        ul
+          li.text HTML Academy – <em>«Профессиональный HTML и CSS, уровень 1»</em>
+          li.text HTML Academy – <em>«Профессиональный HTML и CSS, уровень 2»</em>
+          li.text HTML Academy – <em>JavaScript. Профессиональная разработка веб-интерфейсов»</em>
+          li.text Hexlet – <em>«Профессия: фронтенд JavaScript»</em> (без проектов)
+          li.text Udemy – <em>«ReactJS полное руководство»</em> (Владилен Минин)
+          li.text Udemy – <em>«React + Redux – профессиональная разработка»</em> (Юрий Бура)
+          li.text Webformyself – <em>«Фреймворк Vue.js»</em> (Владилен Минин)
+
+      section.section
+        h2.title Обо мне
+        ul
+          li.text <strong>Образование:</strong> 2013 – 2017, Пермский государственный национальный исследовательский университет, специальность – «Журналистика» (бакалавр)
+          li.text <strong>Опыт работы:</strong> 2017 – 2020, корреспондент делового издания, затем – редактор ленты на новостном портале
+          li.text <strong>Английский язык:</strong> чтение статей и документации
+          li.text <strong>Хобби:</strong> спорт и авторское кино
