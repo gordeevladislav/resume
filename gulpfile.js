@@ -1,5 +1,7 @@
 var gulp = require('gulp');
 var pug = require('gulp-pug');
+var autoprefixer = require("autoprefixer");
+var postcss = require("gulp-postcss");
 var server = require('browser-sync').create();
 
 gulp.task('html', function () {
@@ -10,6 +12,9 @@ gulp.task('html', function () {
 
 gulp.task('css', function () {
   return gulp.src('src/styles/style.css')
+    .pipe(postcss([
+      autoprefixer()
+    ]))
     .pipe(gulp.dest('build/styles'));
 });
 

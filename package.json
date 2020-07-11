@@ -12,5 +12,9 @@
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-pug": "^4.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.5",
+    "gulp-postcss": "^8.0.0"
   }
 }
